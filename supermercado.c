@@ -15,40 +15,40 @@ int main(){
     scanf("%s", &prod1);
     printf("Quantidade produto 1: ");
     scanf("%d", &qtd1);
-    print("Preço produto 1: ");
+    printf("Preco produto 1: ");
     scanf("%f", &preco1); 
 
     printf("Nome produto 2: ");
     scanf("%s", &prod2);
     printf("Quantidade produto 2: ");
     scanf("%d", &qtd2);
-    print("Preço produto 2: ");
+    printf("Preco produto 2: ");
     scanf("%f", &preco2);
 
     printf("Nome produto 3: ");
     scanf("%s", &prod3);
     printf("Quantidade produto 3: ");
     scanf("%d", &qtd3);
-    print("Preço produto 3: ");
+    printf("Preco produto 3: ");
     scanf("%f", &preco3);
 
     printf("Nome produto 4: ");
     scanf("%s", &prod4);
     printf("Quantidade produto 4: ");
     scanf("%d", &qtd4);
-    print("Preço produto 4: ");
+    printf("Preco produto 4: ");
     scanf("%f", &preco4);
 
     printf("Nome produto 5: ");
     scanf("%s", &prod5);
     printf("Quantidade produto 5: ");
     scanf("%d", &qtd5);
-    print("Preço produto 5: ");
+    printf("Preco produto 5: ");
     scanf("%f", &preco5);
 
     float total = qtd1 * preco1 + qtd2 * preco2 + qtd3 * preco3 + qtd4 * preco4 + qtd5 * preco5;
 
-    print("Total a se pago: R$ %.2f", total);
+    printf("Total a ser pago: R$ %.2f\n", total);
 
     if (preco1 > preco_maior){
         strncpy(nome_maior, prod1, sizeof(nome_maior));
@@ -76,7 +76,8 @@ int main(){
         qtd_maior = qtd5;
     }
 
-    print("Produto mais caro!\n");
+    printf("Produto mais caro!\n");
+    printf("Nome: %s\nPreco: R$ %.2f\nQuantidade: %d", nome_maior, preco_maior, qtd_maior);
     
 
     return 0;
