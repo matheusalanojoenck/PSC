@@ -27,7 +27,7 @@ int main(){
     }else if(idade_mae < idade_pai){
         printf("%s e mais nova!\n", nome_mae);
     }else{
-        printf("%s e %s tem a mesma idade!an", nome_pai, nome_mae);
+        printf("%s e %s tem a mesma idade!\n", nome_pai, nome_mae);
     }
 
     return 0;
